@@ -49,7 +49,7 @@ class _InicioPageState extends State<InicioPage> {
         child: ListView(children: [
           Center(
             child: FutureBuilder<DocumentSnapshot>(
-                future: coleccion.doc(' acuerdo ').get(),
+                future: coleccion.doc('acuerdo').get(),
                 builder: (BuildContext context,
                     AsyncSnapshot<DocumentSnapshot> snapshot) {
                   if (snapshot.hasError) {

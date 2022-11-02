@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 1;
+  int _currentIndex = 0;
 
   final colors = [
     Color.fromARGB(207, 38, 107, 53),
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
   ];
   final screens = <Widget>[
     ReglamentoPage(),
-    const InicioPage(),
+    // const InicioPage(),
     QuizPage(),
   ];
   @override
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           tabBackgroundColor: colors[_currentIndex],
           selectedIndex: _currentIndex,
           tabBorderRadius: 10,
-          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
           onTabChange: (index) => {setState(() => _currentIndex = index)},
           tabs: const [
             GButton(
@@ -49,12 +49,12 @@ class _HomePageState extends State<HomePage> {
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
-            GButton(
+            /* GButton(
               icon: Icons.home,
               text: ' Inicio',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
-            ),
+            ), */
             GButton(
               icon: Icons.assignment,
               text: ' Quiz',

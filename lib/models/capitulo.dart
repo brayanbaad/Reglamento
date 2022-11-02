@@ -25,12 +25,12 @@ List<Capitulo> Capitulos = [
   ),
   Capitulo(
     title: "CAPÍTULO IV:",
-    image: "assets/derecho.png",
+    image: "assets/derecho1.png",
     description: "DEBERES Y DERECHOS \n DE LOS ESTUDIANTES",
   ),
   Capitulo(
     title: "CAPÍTULO V:",
-    image: "assets/cap1-1.png",
+    image: "assets/asistencia.png",
     description: "DEL RÉGIMEN ACADÉMICO PROGRAMACIÓN Y ASISTENCIA",
   ),
   Capitulo(
