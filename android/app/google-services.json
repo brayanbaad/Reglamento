@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "502665178024",
+    "project_id": "pruebafirebase-26c3a",
+    "storage_bucket": "pruebafirebase-26c3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502665178024:android:21957d44f9d5872595cb9d",
+        "android_client_info": {
+          "package_name": "com.example.reglamento_estudiantil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "502665178024-h97p6pn8jlsb9fkcqkasgjn2c1rk8cc7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZYxVIE6gD8FqUtXB_xWmcK3__KQdlLIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "502665178024-h97p6pn8jlsb9fkcqkasgjn2c1rk8cc7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
