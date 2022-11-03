@@ -61,7 +61,7 @@ class OnboardingPage extends StatelessWidget {
 
   void onDone(context) async {
     if (await conexion()) {
-      Get.snackbar('NOTIFICACION', 'BIENVENIDO(@) A TU APP UNICESAR ',
+      Get.snackbar('NOTIFICACION', 'BIENVENID@ A TU APP UNICESAR ',
           icon: const Icon(
             Icons.check_box,
             color: Color.fromARGB(255, 8, 194, 14),

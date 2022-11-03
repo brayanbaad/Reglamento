@@ -25,7 +25,7 @@ List<Capitulo> Capitulos = [
   ),
   Capitulo(
     title: "CAPÍTULO IV:",
-    image: "assets/derecho1.png",
+    image: "assets/derecho.png",
     description: "DEBERES Y DERECHOS \n DE LOS ESTUDIANTES",
   ),
   Capitulo(
@@ -35,12 +35,12 @@ List<Capitulo> Capitulos = [
   ),
   Capitulo(
     title: "CAPÍTULO VI:",
-    image: "assets/cap1-1.png",
+    image: "assets/incentivo1.png",
     description: "DE LOS INCENTIVOS",
   ),
   Capitulo(
     title: "CAPÍTULO VII:",
-    image: "assets/cap1-1.png",
+    image: "assets/sanciones.png",
     description: "DEL RÉGIMEN DE SANCIONES DISCIPLINARIAS Y ACADÉMICAS",
   ),
   Capitulo(
