@@ -54,7 +54,7 @@ class CapituloCard extends StatelessWidget {
             // imagen
             Positioned(
               top: 102,
-              right: 80,
+              right: 60,
               child: Hero(
                 tag: '${capitulo.description}',
                 child: Container(
@@ -70,7 +70,7 @@ class CapituloCard extends StatelessWidget {
             ),
             //textos
             Positioned(
-              bottom: 166,
+              bottom: 158,
               left: 179,
               child: SizedBox(
                 height: 136,

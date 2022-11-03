@@ -40,62 +40,62 @@ class _QuizPageState extends State<QuizPage> {
       children: [
         TableRow(children: [
           ButtonRoundedQuiz(
-            color: Color.fromARGB(255, 91, 167, 230),
-            icon: Icons.people_alt,
-            text: 'Capitulo I',
+            color: primarycolor,
+            icon: Icons.quiz,
+            text: 'Examen I',
             onPressed: () => Navigator.pushNamed(context, '/examen1'),
           ),
           ButtonRoundedQuiz(
-            color: Color.fromARGB(255, 212, 129, 226),
-            icon: Icons.people_alt,
-            text: 'Capitulo II',
+            color: primarycolor,
+            icon: Icons.quiz,
+            text: 'Examen II',
             onPressed: () => Navigator.pushNamed(context, '/examen2'),
           ),
         ]),
         TableRow(children: [
           ButtonRoundedQuiz(
-              color: Color.fromARGB(255, 132, 176, 212),
-              icon: Icons.people_alt,
-              text: 'Capitulo III',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen III',
               onPressed: () => Navigator.pushNamed(context, '/examen3')),
           ButtonRoundedQuiz(
-              color: Colors.purpleAccent,
-              icon: Icons.people_alt,
-              text: 'Capitulo IV',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen IV',
               onPressed: () => Navigator.pushNamed(context, '/examen4')),
         ]),
         TableRow(children: [
           ButtonRoundedQuiz(
-              color: Colors.purpleAccent,
-              icon: Icons.people_alt,
-              text: 'Capitulo V',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen V',
               onPressed: () => Navigator.pushNamed(context, '/examen5')),
           ButtonRoundedQuiz(
-              color: Color.fromARGB(255, 212, 170, 107),
-              icon: Icons.list_alt,
-              text: 'Capitulo VI',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen VI',
               onPressed: () => Navigator.pushNamed(context, '/examen6')),
         ]),
         TableRow(children: [
           ButtonRoundedQuiz(
-              color: Colors.blueAccent,
-              icon: Icons.list_rounded,
-              text: 'Capitulo VII',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen VII',
               onPressed: () => Navigator.pushNamed(context, '/examen7')),
           ButtonRoundedQuiz(
-              color: Colors.green,
-              icon: Icons.list_alt,
-              text: 'Capitulo VIII',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen VIII',
               onPressed: () => Navigator.pushNamed(context, '/examen8')),
         ]),
         TableRow(children: [
           ButtonRoundedQuiz(
-              color: Colors.blueAccent,
-              icon: Icons.list_rounded,
-              text: 'Capitulo IX',
+              color: primarycolor,
+              icon: Icons.quiz,
+              text: 'Examen IX',
               onPressed: () => Navigator.pushNamed(context, '/examen9')),
           ButtonRoundedQuiz(
-              color: Colors.blueAccent,
+              color: primarycolor,
               icon: Icons.list_rounded,
               text: 'Estudio De Casos',
               onPressed: () {})

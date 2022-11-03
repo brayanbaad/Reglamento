@@ -22,7 +22,12 @@ class _InicioPageState extends State<InicioPage> {
   Widget build(BuildContext context) {
     CollectionReference coleccion =
         FirebaseFirestore.instance.collection('reglamento');
-    final carouselImages = [
+    final carouselEventos = [
+      "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
+      "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
+      "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
+    ];
+    final carouselNoticias = [
       "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
       "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
       "https://img.freepik.com/vector-gratis/plantilla-poster-evento-musical-formas-coloridas_1361-1591.jpg?w=2000",
@@ -69,7 +74,7 @@ class _InicioPageState extends State<InicioPage> {
                               fontSize: 17,
                               color: Colors.grey,
                             )),
-                        const SizedBox(height: 25),
+                        const SizedBox(height: 17),
                         // parrafo de consejo superior
                         Row(
                           children: [
@@ -86,9 +91,9 @@ class _InicioPageState extends State<InicioPage> {
                         Container(
                           color: Colors.transparent,
                           child: CarouselSlider.builder(
-                              itemCount: carouselImages.length,
+                              itemCount: carouselEventos.length,
                               itemBuilder: (context, index, realindex) {
-                                final carouselImage = carouselImages[index];
+                                final carouselImage = carouselEventos[index];
                                 return builImage(carouselImage, index);
                               },
                               options: CarouselOptions(
@@ -99,7 +104,33 @@ class _InicioPageState extends State<InicioPage> {
                                   autoPlayInterval: const Duration(seconds: 4),
                                   scrollDirection: Axis.horizontal)),
                         ),
-                        const SizedBox(height: 8),
+                        const SizedBox(height: 20),
+                        Row(
+                          children: [
+                            Text("NOTICIAS",
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  color: Colors.grey,
+                                )),
+                          ],
+                        ),
+                        const SizedBox(height: 10),
+                        Container(
+                          color: Colors.transparent,
+                          child: CarouselSlider.builder(
+                              itemCount: carouselNoticias.length,
+                              itemBuilder: (context, index, realindex) {
+                                final carouselImage = carouselNoticias[index];
+                                return builImage(carouselImage, index);
+                              },
+                              options: CarouselOptions(
+                                  height: 250,
+                                  autoPlay: true,
+                                  autoPlayCurve: Curves.easeInOut,
+                                  enlargeCenterPage: true,
+                                  autoPlayInterval: const Duration(seconds: 8),
+                                  scrollDirection: Axis.horizontal)),
+                        ),
                       ],
                     );
                   }

@@ -23,18 +23,23 @@ class ButtonRoundedQuiz extends StatelessWidget {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
           child: Container(
-            height: 200.0,
+            height: 194.0,
             width: 400.0,
             margin: EdgeInsets.all(3.0),
             decoration: BoxDecoration(
-              color: Color.fromARGB(68, 49, 49, 48),
+              border: Border.all(color: Color.fromARGB(255, 218, 218, 218)),
+              color: Colors.white,
               borderRadius: BorderRadius.circular(15.0),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Text(text, style: TextStyle(color: color)),
-                const SizedBox(height: 4.0)
+                CircleAvatar(
+                  backgroundColor: color,
+                  radius: 35.0,
+                  child: Icon(icon, color: Colors.white, size: 30.0),
+                ),
               ],
             ),
           ),

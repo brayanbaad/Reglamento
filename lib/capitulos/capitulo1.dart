@@ -22,7 +22,7 @@ class _Capitulo1PageState extends State<Capitulo1Page> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(15.0),
             child: SafeArea(
               child: Column(
                 children: [
@@ -141,9 +141,12 @@ class future extends StatelessWidget {
                           "${data['inciso2']}",
                           textAlign: TextAlign.left,
                         ),
-                        Text(
-                          "${data['inciso3']}",
-                          textAlign: TextAlign.left,
+                        Row(
+                          children: [
+                            Text(
+                              "${data['inciso3']}",
+                            ),
+                          ],
                         ),
                         Text(
                           "${data['inciso4']}",

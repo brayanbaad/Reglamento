@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 const kSecondaryColor = Color.fromARGB(174, 248, 245, 245);
 const kBlueColor = Color.fromARGB(174, 248, 245, 245);
 const primarycolor = Color.fromARGB(207, 38, 107, 53);
-
+const colorquiz = Color.fromARGB(255, 91, 167, 230);
+const colortitulo = Colors.white;
 const kDefaultPadding = 8.0;
 const defaultPadding = 20.0;
 
