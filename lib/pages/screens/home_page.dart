@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:reglamento_estudiantil/examens/examenCap1.dart';
+
 import 'package:reglamento_estudiantil/pages/screens/inicio_page.dart';
 import 'package:reglamento_estudiantil/pages/screens/quiz_page.dart';
 import 'package:reglamento_estudiantil/pages/screens/reglamento_page.dart';
@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 1;
+  int _currentIndex = 0;
 
   final colors = [
     Color.fromARGB(207, 38, 107, 53),
@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
   ];
   final screens = <Widget>[
     ReglamentoPage(),
-    const InicioPage(),
     QuizPage(),
   ];
   @override
@@ -40,7 +39,7 @@ class _HomePageState extends State<HomePage> {
           tabBackgroundColor: colors[_currentIndex],
           selectedIndex: _currentIndex,
           tabBorderRadius: 10,
-          padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+          padding: const EdgeInsets.symmetric(vertical: 13, horizontal: 40),
           onTabChange: (index) => {setState(() => _currentIndex = index)},
           tabs: const [
             GButton(
@@ -49,12 +48,12 @@ class _HomePageState extends State<HomePage> {
               iconActiveColor: Colors.white,
               textColor: Colors.white,
             ),
-            GButton(
+            /* GButton(
               icon: Icons.home,
               text: ' Inicio',
               iconActiveColor: Colors.white,
               textColor: Colors.white,
-            ),
+            ), */
             GButton(
               icon: Icons.assignment,
               text: ' Quiz',

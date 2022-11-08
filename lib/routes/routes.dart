@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:reglamento_estudiantil/capitulos/capitulo1.dart';
-
-import 'package:reglamento_estudiantil/examens/examenCap3.dart';
 import 'package:reglamento_estudiantil/pages/screens/home_page.dart';
 import 'package:reglamento_estudiantil/pages/screens/reglamento_page.dart';
 import 'package:reglamento_estudiantil/pages/splash_page/splas_page.dart';
-
 import '../capitulos/capitulo2.dart';
 import '../capitulos/capitulo3.dart';
 import '../capitulos/capitulo4.dart';
@@ -15,14 +12,16 @@ import '../capitulos/capitulo6.dart';
 import '../capitulos/capitulo7.dart';
 import '../capitulos/capitulo8.dart';
 import '../capitulos/capitulo9.dart';
-import '../examens/examenCap1.dart';
-import '../examens/examenCap2.dart';
-import '../examens/examenCap4.dart';
-import '../examens/examenCap5.dart';
-import '../examens/examenCap6.dart';
-import '../examens/examenCap7.dart';
-import '../examens/examenCap8.dart';
-import '../examens/examenCap9.dart';
+
+import '../exams/examenCap1.dart';
+import '../exams/examenCap2.dart';
+import '../exams/examenCap3.dart';
+import '../exams/examenCap4.dart';
+import '../exams/examenCap5.dart';
+import '../exams/examenCap6.dart';
+import '../exams/examenCap7.dart';
+import '../exams/examenCap8.dart';
+import '../exams/examenCap9.dart';
 import '../pages/splash_page/onboarding_page.dart';
 
 route() => [

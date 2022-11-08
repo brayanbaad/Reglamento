@@ -16,6 +16,11 @@ class ReglamentoPage extends StatelessWidget {
     final _id;
     return Scaffold(
       appBar: AppBar(
+        title: Center(
+            child: Text(
+          "CAPÍTULOS",
+          style: TextStyle(fontSize: 18),
+        )),
         backgroundColor: primarycolor,
         automaticallyImplyLeading: false,
       ),
@@ -26,7 +31,7 @@ class ReglamentoPage extends StatelessWidget {
             const SizedBox(height: kDefaultPadding / 1),
             Flexible(
               child: Stack(
-                alignment: Alignment.bottomCenter,
+                alignment: Alignment.topCenter,
                 children: <Widget>[
                   PageView.builder(
                     controller: _controller,
@@ -43,15 +48,29 @@ class ReglamentoPage extends StatelessWidget {
                               Icons.assignment_turned_in,
                               color: Color.fromARGB(255, 8, 194, 14),
                             ),
-                            colorText: Colors.black87,
+                            colorText: Color.fromARGB(137, 0, 0, 0),
                             duration: Duration(seconds: 3));
                       },
                     ),
                     scrollDirection: Axis.horizontal,
                   ),
+
+                  /* Positioned(
+                    top: 5,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Selecciona el Capítulo que deseas leer:",
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: Colors.grey,
+                            )),
+                      ],
+                    ),
+                  ), */
                   //pageIndicator
                   Positioned(
-                    top: 490,
+                    top: 510,
                     child: SmoothPageIndicator(
                       controller: _controller,
                       count: 9,

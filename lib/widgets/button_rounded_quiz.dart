@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:reglamento_estudiantil/constants.dart';
 
 class ButtonRoundedQuiz extends StatelessWidget {
   final String text;
@@ -23,7 +24,7 @@ class ButtonRoundedQuiz extends StatelessWidget {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
           child: Container(
-            height: 194.0,
+            height: 174.0,
             width: 400.0,
             margin: EdgeInsets.all(3.0),
             decoration: BoxDecoration(
@@ -34,7 +35,9 @@ class ButtonRoundedQuiz extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text(text, style: TextStyle(color: color)),
+                Text(text,
+                    style:
+                        TextStyle(color: Colors.grey.shade500, fontSize: 17)),
                 CircleAvatar(
                   backgroundColor: color,
                   radius: 35.0,
