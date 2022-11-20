@@ -21,20 +21,17 @@ class _Capitulo1PageState extends State<Capitulo1Page> {
       ),
       body: ListView(
         children: [
-          Padding(
-            padding: EdgeInsets.all(15.0),
-            child: SafeArea(
-              child: Column(
-                children: [
-                  Container(
-                    child: Stack(
-                      children: [
-                        future(coleccion: coleccion),
-                      ],
-                    ),
-                  )
-                ],
-              ),
+          SafeArea(
+            child: Column(
+              children: [
+                Container(
+                  child: Stack(
+                    children: [
+                      future(coleccion: coleccion),
+                    ],
+                  ),
+                )
+              ],
             ),
           )
         ],
@@ -73,100 +70,106 @@ class future extends StatelessWidget {
                 const SizedBox(height: 17),
                 const Text("CAPITULO I: DE LOS ESTUDIANTES",
                     style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey,
-                    )),
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black)),
                 Image.asset(
                   "assets/estudent.png",
                   width: 200,
                 ),
                 const SizedBox(height: 17),
-                Row(
-                  children: [
-                    Text(
-                      "ARTICULO N°1:",
-                      style: TextStyle(
-                        fontSize: 17,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 17),
-                Text(
-                  "${data['articulo_1']}",
-                  textAlign: TextAlign.left,
-                ),
-                const SizedBox(height: 17),
-                Row(
-                  children: [
-                    Text(
-                      "ARTICULO N°2:",
-                      style: TextStyle(
-                        fontSize: 17,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 17),
-                Center(
-                  child: Text(
-                    "${data['articulo_2']}",
-                    textAlign: TextAlign.left,
+                Theme(
+                  data: ThemeData().copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    title: Text("ARTICULO N°1:",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold)),
+                    iconColor: Colors.black,
+                    backgroundColor: Color.fromARGB(255, 233, 233, 233),
+                    collapsedIconColor: Colors.black,
+                    childrenPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
+                    expandedCrossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text("${data['articulo1']}",
+                          textAlign: TextAlign.left,
+                          style: const TextStyle(color: Colors.black)),
+                    ],
                   ),
                 ),
-                const SizedBox(height: 17),
-                Row(
-                  children: [
-                    Text(
-                      "ARTICULO N°3:",
-                      style: TextStyle(
-                        fontSize: 17,
-                        color: Colors.grey,
-                      ),
-                    ),
-                  ],
+                const SizedBox(height: 5),
+                Theme(
+                  data: ThemeData().copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    title: Text("ARTICULO N°2:",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold)),
+                    iconColor: Colors.black,
+                    backgroundColor: Color.fromARGB(255, 233, 233, 233),
+                    collapsedIconColor: Colors.black,
+                    childrenPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
+                    expandedCrossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text("${data['articulo2']}",
+                          textAlign: TextAlign.left,
+                          style: const TextStyle(color: Colors.black)),
+                    ],
+                  ),
                 ),
-                Column(
-                  children: [
-                    const SizedBox(height: 17),
-                    Column(
-                      children: [
-                        Text(
-                          "${data['inciso1']}",
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          "${data['inciso2']}",
-                          textAlign: TextAlign.left,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              "${data['inciso3']}",
+                const SizedBox(height: 5),
+                Theme(
+                  data: ThemeData().copyWith(dividerColor: Colors.transparent),
+                  child: ExpansionTile(
+                    title: Text("ARTICULO N°3:",
+                        style: TextStyle(
+                            color: Colors.black, fontWeight: FontWeight.bold)),
+                    iconColor: Colors.black,
+                    backgroundColor: Color.fromARGB(255, 233, 233, 233),
+                    collapsedIconColor: Colors.black,
+                    childrenPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
+                    expandedCrossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      RichText(
+                          text: TextSpan(
+                              text: "${data['articulo3']}",
+                              style: const TextStyle(color: Colors.black),
+                              children: [
+                            TextSpan(
+                              text:
+                              "\n\n1. ",
+                              style: TextStyle(fontWeight: FontWeight.bold)
                             ),
-                          ],
-                        ),
-                        Text(
-                          "${data['inciso4']}",
-                          textAlign: TextAlign.left,
-                        ),
-                        Text(
-                          "${data['inciso5']}",
-                          textAlign: TextAlign.left,
-                        ),
-                      ],
-                    )
-                  ],
-                ),
-                SizedBox(height: 16),
-                /* ClipPath(
-                  clipper: WaveClipperTwo(reverse: true),
-                  child: Container(
-                    height: 80,
+                            TextSpan(text: '${data['inciso1']}'),
+                            TextSpan(
+                              text:
+                              "\n2. ",
+                              style: TextStyle(fontWeight: FontWeight.bold)
+                            ),
+                            TextSpan(text: '${data['inciso2']}'),
+                            TextSpan(
+                              text:
+                              "\n3. ",
+                              style: TextStyle(fontWeight: FontWeight.bold)
+                            ),
+                            TextSpan(text: '${data['inciso3']}'),
+                            TextSpan(
+                              text:
+                              "\n4. ",
+                              style: TextStyle(fontWeight: FontWeight.bold)
+                            ),
+                            TextSpan(text: '${data['inciso4']}'),
+                            TextSpan(
+                              text:
+                              "\n5. ",
+                              style: TextStyle(fontWeight: FontWeight.bold)
+                            ),
+                            TextSpan(text: '${data['inciso5']}')
+                          ])),
+                    ],
                   ),
-                ), */
+                ),
               ],
             );
           }

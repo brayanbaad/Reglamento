@@ -6,6 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:reglamento_estudiantil/pages/splash_page/onboarding_page.dart';
 import 'routes/routes.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 Future firebaseiniciacion() async {
   FirebaseApp initializacion = await Firebase.initializeApp();
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       initialRoute: '/onboarding',
       getPages: route(),
+      theme: ThemeData(fontFamily: GoogleFonts.rubik().fontFamily),
       navigatorKey: Get.key,
       debugShowCheckedModeBanner: false,
       home: FutureBuilder(
