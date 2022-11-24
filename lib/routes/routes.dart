@@ -22,6 +22,7 @@ import '../exams/examenCap6.dart';
 import '../exams/examenCap7.dart';
 import '../exams/examenCap8.dart';
 import '../exams/examenCap9.dart';
+import '../models/question.dart';
 import '../pages/splash_page/onboarding_page.dart';
 
 route() => [
@@ -39,7 +40,12 @@ route() => [
       GetPage(name: '/capitulo7', page: () => Capitulo7Page()),
       GetPage(name: '/capitulo8', page: () => Capitulo8Page()),
       GetPage(name: '/capitulo9', page: () => Capitulo9Page()),
-      GetPage(name: '/examen1', page: () => Examen1Cap()),
+      GetPage(
+          name: '/examen1',
+          page: () => Examen1Cap(
+                totalTime: 60,
+                questions: question,
+              )),
       GetPage(name: '/examen2', page: () => Examen2Cap()),
       GetPage(name: '/examen3', page: () => Examen3Cap()),
       GetPage(name: '/examen4', page: () => Examen4Cap()),
