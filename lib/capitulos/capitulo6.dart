@@ -66,11 +66,15 @@ class future extends StatelessWidget {
             return Column(
               children: <Widget>[
                 const SizedBox(height: 17),
-                const Text("CAPÍTULO VI: DE LOS INCENTIVOS",
-                    style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black)),
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                  child: const Text("CAPÍTULO VI: DE LOS INCENTIVOS",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black)),
+                ),
                 Image.asset(
                   "assets/estudent.png",
                   width: 200,
