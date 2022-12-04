@@ -141,34 +141,24 @@ class future extends StatelessWidget {
                               style: const TextStyle(color: Colors.black),
                               children: [
                             TextSpan(
-                              text:
-                              "\n\n1. ",
-                              style: TextStyle(fontWeight: FontWeight.bold)
-                            ),
+                                text: "\n\n1. ",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(text: '${data['inciso1']}'),
                             TextSpan(
-                              text:
-                              "\n2. ",
-                              style: TextStyle(fontWeight: FontWeight.bold)
-                            ),
+                                text: "\n2. ",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(text: '${data['inciso2']}'),
                             TextSpan(
-                              text:
-                              "\n3. ",
-                              style: TextStyle(fontWeight: FontWeight.bold)
-                            ),
+                                text: "\n3. ",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(text: '${data['inciso3']}'),
                             TextSpan(
-                              text:
-                              "\n4. ",
-                              style: TextStyle(fontWeight: FontWeight.bold)
-                            ),
+                                text: "\n4. ",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(text: '${data['inciso4']}'),
                             TextSpan(
-                              text:
-                              "\n5. ",
-                              style: TextStyle(fontWeight: FontWeight.bold)
-                            ),
+                                text: "\n5. ",
+                                style: TextStyle(fontWeight: FontWeight.bold)),
                             TextSpan(text: '${data['inciso5']}')
                           ])),
                     ],
