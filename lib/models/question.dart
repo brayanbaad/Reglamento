@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 class Question {
@@ -46,6 +47,13 @@ class Question {
     );
   }
 
+  factory Question.fromQueryDocumentSnapshot(QueryDocumentSnapshot snapshot) {
+    final data = snapshot.data() as Map<String, dynamic>;
+    final id = snapshot.id;
+    data['id'] = id;
+    return Question.fromMap(data);
+  }
+
   String toJson() => json.encode(toMap());
 
   factory Question.fromJson(String source) =>
@@ -76,41 +84,41 @@ class Question {
   }
 }
 
-List<Question> question = [
-  Question(
-    id: '1',
-    question:
-        '¿Qué pasaría si el estudiante no renueva la matricula académica?',
-    answers: [
-      'No podrá seguir estudiando',
-      'Pierda la matricula cero',
-      'Pierde la calidad estudiantil',
-      'Ninguna de las anteriores '
-    ],
-    correctAnswer: 'Pierde la calidad estudiantil',
-  ),
-  Question(
-    id: '2',
-    question:
-        'Con cual de las opciones NO se pierde la calidad del estudiante:',
-    answers: [
-      'Bajo rendimiento académico',
-      'Estudiante libre de sanciones académica',
-      'Enfermedad debidamente comprobada por el servicio médico de la universidad'
-    ],
-    correctAnswer: 'Estudiante libre de sanciones académica',
-  ),
-  Question(
-    id: '3',
-    question: '¿A quién va enfocado el capítulo I?',
-    answers: ['Profesores', 'Administración', 'Estudiantes', 'Empleados'],
-    correctAnswer: 'Estudiantes',
-  ),
-  Question(
-    id: '4',
-    question:
-        '¿Es necesario estar admitido en la Universidad para poder adquirir la calidad de estudiante?',
-    answers: ['Falso', 'Verdadero'],
-    correctAnswer: 'Verdadero',
-  ),
-];
+// List<Question> question = [
+//   Question(
+//     id: '1',
+//     question:
+//         '¿Qué pasaría si el estudiante no renueva la matricula académica?',
+//     answers: [
+//       'No podrá seguir estudiando',
+//       'Pierda la matricula cero',
+//       'Pierde la calidad estudiantil',
+//       'Ninguna de las anteriores '
+//     ],
+//     correctAnswer: 'Pierde la calidad estudiantil',
+//   ),
+//   Question(
+//     id: '2',
+//     question:
+//         'Con cual de las opciones NO se pierde la calidad del estudiante:',
+//     answers: [
+//       'Bajo rendimiento académico',
+//       'Estudiante libre de sanciones académica',
+//       'Enfermedad debidamente comprobada por el servicio médico de la universidad'
+//     ],
+//     correctAnswer: 'Estudiante libre de sanciones académica',
+//   ),
+//   Question(
+//     id: '3',
+//     question: '¿A quién va enfocado el capítulo I?',
+//     answers: ['Profesores', 'Administración', 'Estudiantes', 'Empleados'],
+//     correctAnswer: 'Estudiantes',
+//   ),
+//   Question(
+//     id: '4',
+//     question:
+//         '¿Es necesario estar admitido en la Universidad para poder adquirir la calidad de estudiante?',
+//     answers: ['Falso', 'Verdadero'],
+//     correctAnswer: 'Verdadero',
+//   ),
+// ];

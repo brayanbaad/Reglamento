@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:reglamento_estudiantil/pages/screens/quiz_page.dart';
 
 import '../../components/action_button.dart';
 import '../../components/gradient_box.dart';
@@ -40,14 +41,11 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
               SizedBox(height: 40),
               ActionButton(
-                title: 'Intentarlo de nuevo',
+                title: 'Menu de Examenes',
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => Examen1Cap(
-                        totalTime: widget.totalTime,
-                        questions: widget.questions,
-                      ),
+                      builder: (context) => QuizPage(),
                     ),
                   );
                 },

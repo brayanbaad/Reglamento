@@ -40,18 +40,4 @@ route() => [
       GetPage(name: '/capitulo7', page: () => Capitulo7Page()),
       GetPage(name: '/capitulo8', page: () => Capitulo8Page()),
       GetPage(name: '/capitulo9', page: () => Capitulo9Page()),
-      GetPage(
-          name: '/examen1',
-          page: () => Examen1Cap(
-                totalTime: 60,
-                questions: question,
-              )),
-      GetPage(name: '/examen2', page: () => Examen2Cap()),
-      GetPage(name: '/examen3', page: () => Examen3Cap()),
-      GetPage(name: '/examen4', page: () => Examen4Cap()),
-      GetPage(name: '/examen5', page: () => Examen5Cap()),
-      GetPage(name: '/examen6', page: () => Examen6Cap()),
-      GetPage(name: '/examen7', page: () => Examen7Cap()),
-      GetPage(name: '/examen8', page: () => Examen8Cap()),
-      GetPage(name: '/examen9', page: () => Examen9Cap()),
     ];
