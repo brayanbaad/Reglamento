@@ -12,17 +12,6 @@ import '../capitulos/capitulo6.dart';
 import '../capitulos/capitulo7.dart';
 import '../capitulos/capitulo8.dart';
 import '../capitulos/capitulo9.dart';
-
-import '../exams/examenCap1.dart';
-import '../exams/examenCap2.dart';
-import '../exams/examenCap3.dart';
-import '../exams/examenCap4.dart';
-import '../exams/examenCap5.dart';
-import '../exams/examenCap6.dart';
-import '../exams/examenCap7.dart';
-import '../exams/examenCap8.dart';
-import '../exams/examenCap9.dart';
-import '../models/question.dart';
 import '../pages/splash_page/onboarding_page.dart';
 
 route() => [

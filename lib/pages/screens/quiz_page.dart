@@ -253,18 +253,6 @@ class _QuizPageState extends State<QuizPage> {
               text: 'Examen VIII',
               onPressed: () {}),
         ]),
-        TableRow(children: [
-          ButtonRoundedQuiz(
-              color: primarycolor,
-              icon: Icons.list_rounded,
-              text: 'Examen IX',
-              onPressed: () {}),
-          ButtonRoundedQuiz(
-              color: primarycolor,
-              icon: Icons.list_rounded,
-              text: 'Estudio De Casos',
-              onPressed: () {})
-        ]),
       ],
     );
   }

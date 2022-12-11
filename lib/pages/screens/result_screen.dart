@@ -5,6 +5,7 @@ import '../../components/action_button.dart';
 import '../../components/gradient_box.dart';
 import '../../exams/examenCap1.dart';
 import '../../models/question.dart';
+import 'home_page.dart';
 
 class ResultScreen extends StatefulWidget {
   const ResultScreen({
@@ -41,11 +42,11 @@ class _ResultScreenState extends State<ResultScreen> {
               ),
               SizedBox(height: 40),
               ActionButton(
-                title: 'Menu de Examenes',
+                title: 'Menu de inicio',
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(
-                      builder: (context) => QuizPage(),
+                      builder: (context) => HomePage(),
                     ),
                   );
                 },
